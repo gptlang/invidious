@@ -2,11 +2,10 @@ CREATE TABLE IF NOT EXISTS public.sublists
 (
     title text,
     id text primary key,
-    author text,
+    author text NOT NULL,
     description text,
     created timestamptz,
-    updated timestamptz,
-    index int8[]
+    subscriptions text[]
 )
 
 GRANT ALL ON public.sublists TO current_user;

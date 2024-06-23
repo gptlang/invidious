@@ -11,4 +11,3 @@ psql --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" < config/sql/annotation
 psql --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" < config/sql/playlists.sql
 psql --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" < config/sql/playlist_videos.sql
 psql --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" < config/sql/sublists.sql
-psql --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" < config/sql/sublist_channels.sql
