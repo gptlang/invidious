@@ -17,20 +17,18 @@ struct Sublist
 
   property id : String
   property title : String
-  property description : String
   property author : String
   property created : Time
   property subscriptions : Array(String)
 
 end
 
-def create_sublist(title, description, user)
+def create_sublist(title, user)
   slid = "IVSL#{Random::Secure.urlsafe_base64(24)[0, 31]}"
   sublist = Sublist.new({
     title: title,
     id: slid,
     author: user.email,
-    description: description,
     created: Time.utc,
     subscriptions: [] of String,
   })
